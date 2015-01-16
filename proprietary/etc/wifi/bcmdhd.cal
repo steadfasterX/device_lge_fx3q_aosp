@@ -1,0 +1,137 @@
+# NVRAM file for BCM94334WLAGB board
+# 5GHz FEM RFMD RF8502 and 2.4GHz FEM RFMD RF8202
+
+manfid=0x2d0
+prodid=0x05de
+vendid=0x14e4
+devid=0x4380
+boardtype=0x05de
+boardrev=0x1205
+boardnum=23
+macaddr=00:90:4c:c5:12:38
+sromrev=3
+
+boardflags=0x10081a01
+xtalfreq=37400
+nocrc=1
+ag0=253
+aa2g=1
+ccode=US
+regrev=100
+pa0itssit=0x20
+
+#For external ePA
+extpagain2g=2
+extpagain5g=2
+
+#PA parameters for 2.4GHz TSSI
+pa0b0=0x13E6
+pa0b1=0xFDB2
+pa0b2=0xFF69
+tssifloor2g=20
+# rssi params(RFMD) for 2.4GHz
+rssismf2g=0xf
+rssismc2g=0x8
+rssisav2g=0x1
+# rssi params for 5GHz
+rssismf5g=0xb
+rssismc5g=0x6
+rssisav5g=0x3
+#PA parameters for lower a-band TSSI
+pa1lob0=0x178F
+pa1lob1=0xFD31
+pa1lob2=0xFF76
+tssifloor5gl=42
+#PA parameters for midband TSSI
+pa1b0=0x19F7
+pa1b1=0xFD0B
+pa1b2=0xFF77
+tssifloor5g=46
+#PA paramasdeters for high band TSSI
+pa1hib0=0x1A1A
+pa1hib1=0xFCF5
+pa1hib2=0xFF6A
+tssifloor5gh=46
+
+maxp2ga0=88
+ofdm2gpo=0xDDDD4444
+mcs2gpo0=0xbbbb
+mcs2gpo1=0xbbbb
+cckPwrOffset=-2
+maxp5gla0=72
+ofdm5glpo=0x99990000
+mcs5glpo0=0x9999
+mcs5glpo1=0x9999
+mcs5glpo2=0x9999
+mcs5glpo3=0x9999
+maxp5ga0=60
+ofdm5gpo=0x99990000
+mcs5gpo0=0x9999
+mcs5gpo1=0x9999
+mcs5gpo2=0x9999
+mcs5gpo3=0x9999
+maxp5gha0=76
+ofdm5ghpo=0x99990000
+mcs5ghpo0=0x9999
+mcs5ghpo1=0x9999
+mcs5ghpo2=0x9999
+mcs5ghpo3=0x9999
+PwrOffset40mhz5g=0
+
+#2G & 5G digital filter type for CCK and OFDM
+cckdigfilttype=24
+ofdmdigfilttype2g=3
+ofdmdigfilttype5g=3
+ofdm40digfilttype=5
+
+
+rxpo5g=0
+dacrate2xen=1
+txalpfbyp=1
+txalpfpu=1
+
+#RFMD 2G & 5G FEM switch control table 
+swctrlmap_2g=0x00040004,0x000a000a,0x00020002,0x1020a,0x1ff
+swctrlmap_5g=0x00400040,0x00300030,0x00100010,0x1020a,0x2f8
+
+elna_off_gain_idx_2g=30
+triso2g=8
+triso5g=7
+
+muxenab=0x10
+dacpu.fab.4=1
+
+aci_detect_en_2g=1
+
+iqlocalidx5g=40
+dlocalidx5g=60
+lpbckmode5g=1
+txiqlopapu5g=0
+iqcalidx5g=50
+txiqlopapu2g=0
+dlorange_lowlimit=5
+loflag=1
+
+gain_settle_dly_2g=4
+gain_settle_dly_5g=4
+noise_cal_po_2g=-1
+noise_cal_po_40_2g=-1
+noise_cal_high_gain_2g=73
+noise_cal_nf_substract_val_2g=346
+noise_cal_po_5g=-1
+noise_cal_po_40_5g=-1
+noise_cal_high_gain_5g=73
+noise_cal_nf_substract_val_5g=346
+
+# GPIO for SDIO OOB
+#sd_gpout=4
+#gp_val=1
+#sd_oobonly=1
+sd_gpout=0
+gp_val=1
+muxenab=0x10
+
+rssicorrnorm=6
+rssicorratten=6
+rssicorrnorm5g=1,1,4
+rssicorratten5g=1,1,4

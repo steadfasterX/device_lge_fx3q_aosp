@@ -1,0 +1,42 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= mr_loki.sh
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= mr_loki.sh
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= mr_unloki.sh
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= mr_unloki.sh
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= loki_tool
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= EXECUTABLES
+LOCAL_SRC_FILES		:= loki_tool
+LOCAL_MODULE_PATH	:= $(TARGET_RECOVERY_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= unpackbootimg
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= EXECUTABLES
+LOCAL_SRC_FILES		:= unpackbootimg
+LOCAL_MODULE_PATH	:= $(TARGET_RECOVERY_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= mkbootimg
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= EXECUTABLES
+LOCAL_SRC_FILES		:= mkbootimg
+LOCAL_MODULE_PATH	:= $(TARGET_RECOVERY_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
